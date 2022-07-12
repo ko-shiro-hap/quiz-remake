@@ -1,5 +1,42 @@
 .header {
-  width: 100%;
+  position: fixed;
+  width: 100vw;
+  background-color: #fff;
   height: 80px;
-  background-color: blue;
+  z-index: 100;
+
+  &__inner {
+    height: 100%;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
+
+.nav {
+
+  &__list {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__item {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  &__sns__item {
+    width: 50px;
+    height: 50px;
+    line-height: 60px;
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 50%;
+  }
+}
+
+
+

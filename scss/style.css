@@ -101,12 +101,48 @@ input, select {
 }
 
 body {
-  background-color: red;
-  font-size: 16px;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+small {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+a {
+  color: #666666;
+  text-decoration: none;
 }
 
 .header {
-  width: 100%;
+  position: fixed;
+  width: 100vw;
+  background-color: #fff;
   height: 80px;
-  background-color: blue;
+  z-index: 100;
+}
+.header__inner {
+  height: 100%;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__list {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+.nav__item {
+  font-size: 14px;
+  font-weight: bold;
+}
+.nav__sns__item {
+  width: 50px;
+  height: 50px;
+  line-height: 60px;
+  text-align: center;
+  border: 1px solid #eee;
+  border-radius: 50%;
 }/*# sourceMappingURL=style.css.map */
