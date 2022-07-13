@@ -160,21 +160,6 @@ img {
   color: #fff;
 }
 
-.js__selected {
-  border-color: #0071bc;
-  background-color: #FFF2F5;
-}
-
-.js__correct {
-  display: block;
-  background-color: #FFF2F5;
-}
-
-.js__wrong {
-  display: block;
-  background-color: #EFF2F5;
-}
-
 .header {
   position: fixed;
   width: 100vw;
@@ -406,14 +391,14 @@ img {
 }
 .judgement__correct {
   display: none;
-  display: block;
+  background-color: #FFF2F5;
 }
 .judgement__correct h3 {
   color: #E34E70;
 }
 .judgement__wrong {
   display: none;
-  display: block;
+  background-color: #EFF2F5;
 }
 .judgement__wrong h3 {
   color: #0071BC;
@@ -567,4 +552,17 @@ img {
   line-height: 18.2px;
   font-weight: bold;
   letter-spacing: 1px;
+}
+
+.js__selected {
+  border-color: #0071bc;
+  background-color: #FFF2F5;
+}
+
+.js__correct {
+  display: block;
+}
+
+.js__wrong {
+  display: block;
 }/*# sourceMappingURL=style.css.map */

@@ -10,8 +10,10 @@
 
   // 変数・定数
   const btn = document.querySelectorAll(".answer__item");
-  const correctMessage = document.querySelector('.judgment__correct');
-  const wrongMessage = document.querySelector('.judgment__wrong');
+  const correct = document.querySelector('.judgement__correct');
+  // const correct = document.getElementById('correct');
+  const wrong = document.querySelector('.judgement__wrong');
+  // const wrong = document.getElementById('wrong');
   let btnClicked;
   // 繰り返し処理必要
   const q1Answer = questions[1];
@@ -25,12 +27,10 @@
       if(btnClicked !== true) {
         e.classList.add('js__selected');
         if(answer === q1Answer) {
-          console.log('aaa');
-          correctMessage.classList.add('js__correct');
+          correct.classList.add('js__correct');
         }
         else {
-          console.log('eee');
-          wrongMessage.classList.add('js__wrong');
+          wrong.classList.add('js__wrong');
         };
       };
 
@@ -38,5 +38,4 @@
     });
   });
 }
-
 
