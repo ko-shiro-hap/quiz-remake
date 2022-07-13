@@ -9,9 +9,9 @@
   ];
 
   // 変数・定数
-  const btn = document.querySelectorAll(".btn");
-  const correctMessage = document.querySelector('.correct-wrapper');
-  const wrongMessage = document.querySelector('.wrong-wrapper');
+  const btn = document.querySelectorAll(".answer__item");
+  const correctMessage = document.querySelector('.judgment__correct');
+  const wrongMessage = document.querySelector('.judgment__wrong');
   let btnClicked;
   // 繰り返し処理必要
   const q1Answer = questions[1];
@@ -23,14 +23,14 @@
       const answer = e.innerHTML;
 
       if(btnClicked !== true) {
-        e.classList.add('selected');
+        e.classList.add('js__selected');
         if(answer === q1Answer) {
           console.log('aaa');
-          correctMessage.classList.add('js-correct');
+          correctMessage.classList.add('js__correct');
         }
         else {
           console.log('eee');
-          wrongMessage.classList.add('js-wrong');
+          wrongMessage.classList.add('js__wrong');
         };
       };
 

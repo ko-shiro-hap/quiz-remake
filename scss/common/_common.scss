@@ -58,3 +58,32 @@ img {
   height: 40px;
   background: radial-gradient(#fff 60%, rgba(255, 255, 255, 0) 40%);
 }
+
+// quiz__icon-------------------------------
+
+.quiz__icon {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  display: inline-block;
+  padding: 16px;
+  font-size: 36px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+
+// javascript---------------------------------
+
+.js__selected {
+  border-color: #0071bc;
+  background-color: #FFF2F5;
+}
+
+.js__correct {
+  display: block;
+  background-color: #FFF2F5;
+}
+
+.js__wrong {
+  display: block;
+  background-color: #EFF2F5;
+}
